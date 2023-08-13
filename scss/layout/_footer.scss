@@ -1,0 +1,38 @@
+@import "../utilities/colors";
+@import "../utilities/fonts";
+@import "../utilities/variables";
+
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+footer {
+  background-color: $smoke_color;
+  display: grid;
+  margin-top: $margins-top;
+  justify-content: center;
+  align-items: center;
+  color: $air_color;
+
+  img {
+    width: $logo_footer_width;
+    margin-top: $margins-top;
+    display: block;
+    border-radius: 1rem;
+    opacity: 0.7;
+  }
+
+  .rrss-container {
+    display: flex;
+    justify-content: space-around;
+
+    img {
+      margin-bottom: $margins-bottom;
+      width: 50px;
+    }
+  }
+
+  .general-container .copywr {
+    margin-top: $margins-top;
+    display: flex;
+    justify-content: center;
+  }
+}

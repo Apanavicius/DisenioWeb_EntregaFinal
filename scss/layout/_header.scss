@@ -1,0 +1,53 @@
+@import "../utilities/colors";
+@import "../utilities/fonts";
+@import "../utilities/variables";
+
+/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
+header {
+  display: flex;
+  font-family: $font_ubuntu;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    3deg,
+    rgba(255, 255, 255, 1) 55%,
+    rgba(255, 201, 183, 1) 60%,
+    rgba(255, 252, 249, 1) 70%
+  );
+  display: flex;
+  align-items: center;
+  margin-bottom: $margins-bottom;
+
+  .isologo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: $logo_header_height;
+      width: $logo_header_width;
+      margin-left: 4rem;
+      margin-top: 4px;
+      border-radius: 1rem;
+      z-index: 1;
+    }
+  }
+
+  nav li a {
+    text-decoration: none;
+    font-size: $nav_font_size;
+    color: $smoke_color;
+    font-weight: $nav_font_size;
+    padding-right: 20px;
+    margin: 0.5rem;
+
+    &:hover {
+      color: $fire_color;
+      font-size: $hover_font_size;
+      transition: all 0.5s;
+    }
+  }
+
+  #links li {
+    display: inline;
+  }
+}
