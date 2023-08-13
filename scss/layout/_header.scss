@@ -2,7 +2,7 @@
 @import "../utilities/fonts";
 @import "../utilities/variables";
 
-/* -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  */
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 header {
   display: flex;
   font-family: $font_ubuntu;
@@ -16,7 +16,7 @@ header {
   );
   display: flex;
   align-items: center;
-  margin-bottom: $margins-bottom;
+  margin-bottom: $margins_bottom;
 
   .isologo {
     display: flex;
@@ -35,7 +35,7 @@ header {
   nav li a {
     text-decoration: none;
     font-size: $nav_font_size;
-    color: $smoke_color;
+    color: $black_color;
     font-weight: $nav_font_size;
     padding-right: 20px;
     margin: 0.5rem;

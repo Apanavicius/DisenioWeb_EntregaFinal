@@ -1,5 +1,15 @@
-$fire_color: #db0202;
+$fire_color: #cc0808;
 
 $air_color: rgb(242, 250, 252);
 
-$smoke_color: rgb(32, 27, 27);
+$black_color: rgb(32, 27, 27);
+
+$smoke_color: #f4f8f5;
+
+//$hot_breeze: #f52f2f;
+$hot_breeze: linear-gradient(
+  270deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(255, 201, 181, 1) 36%,
+  rgba(255, 252, 249, 1) 79%
+);
