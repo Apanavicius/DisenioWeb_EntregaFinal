@@ -18,8 +18,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(3deg, rgb(255, 255, 255) 55%, rgb(255, 201, 183) 60%, rgb(255, 252, 249) 70%);
-  display: flex;
-  align-items: center;
   margin-bottom: 2.5rem;
 }
 header .isologo {
@@ -34,67 +32,87 @@ header .isologo img {
   border-radius: 1rem;
   z-index: 1;
 }
-header nav li a {
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+header li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: rgb(32, 27, 27);
-  font-weight: 1.2rem;
   padding-right: 20px;
   margin: 0.5rem;
 }
-header nav li a:hover {
-  color: #cc0808;
-  font-size: 1.5rem;
-  transition: all 0.5s;
+header li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: brown;
+  margin: auto;
+  display: block;
+  align-items: center;
+}
+header li a:hover::after {
+  width: 70%;
+  transition: width 0.3s linear;
+  margin-top: 5px;
+  align-items: center;
 }
 header #links li {
   display: inline;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Font: Ubuntu  */
 /* Font: Noto  */
-body {
-  font-family: "Noto Serif Vithkuqi", serif, Courier, monospace;
-  background-color: #f4f8f5;
+/* Scrolling the wrapper NOT the body*/
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
 }
-
-.index-text-description {
-  background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(255, 201, 181) 36%, rgb(255, 252, 249) 79%);
+.wrapper section.presentation {
   position: relative;
-}
-.index-text-description::before {
-  content: "";
-  display: block;
-  position: absolute;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 50%;
-  background: #f4f8f5;
-  rotate: -4deg;
-  translate: -52% -50%;
-}
-.index-text-description h1,
-.index-text-description h2 {
-  font-size: 4rem;
   display: flex;
-  color: #cc0808;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
-.index-text-description p {
+.wrapper .background {
+  transform: translateZ(-10px) scale(2);
+}
+.wrapper .foreground {
+  transform: translateZ(-3px) scale(1.4);
+  opacity: 0.1;
+}
+.wrapper .background,
+.wrapper .foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: stretch;
+  z-index: -1;
+}
+.wrapper .title {
+  font-size: 6rem;
+  color: transparent;
+  text-shadow: 0 0 1.5px rgb(242, 250, 252);
+}
+.wrapper section.about-us {
   font-size: larger;
-  position: relative;
-  z-index: 1;
-  margin: 5rem 5%;
-}
-
-.index-background-image {
-  height: 380px;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-image: url("../assets/img/img06.jpg");
+  padding: 2rem;
+  background-color: rgb(242, 250, 252);
+  color: rgb(32, 27, 27);
+  text-align: center;
+  line-height: 3rem;
 }
 
 /* Font: Ubuntu  */
@@ -102,7 +120,6 @@ body {
 footer {
   background-color: rgb(32, 27, 27);
   display: grid;
-  margin-top: 2.5rem;
   justify-content: center;
   align-items: center;
   color: rgb(242, 250, 252);

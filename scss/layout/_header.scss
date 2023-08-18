@@ -14,8 +14,6 @@ header {
     rgba(255, 201, 183, 1) 60%,
     rgba(255, 252, 249, 1) 70%
   );
-  display: flex;
-  align-items: center;
   margin-bottom: $margins_bottom;
 
   .isologo {
@@ -32,18 +30,33 @@ header {
     }
   }
 
-  nav li a {
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li a {
     text-decoration: none;
     font-size: $nav_font_size;
     color: $black_color;
-    font-weight: $nav_font_size;
     padding-right: 20px;
     margin: 0.5rem;
 
-    &:hover {
-      color: $fire_color;
-      font-size: $hover_font_size;
-      transition: all 0.5s;
+    &::after {
+      content: "";
+      width: 0;
+      height: $underline_thickness;
+      background-color: brown;
+      margin: auto;
+      display: block;
+      align-items: center;
+    }
+
+    &:hover::after {
+      width: 70%;
+      transition: width 0.3s linear;
+      margin-top: 5px;
+      align-items: center;
     }
   }
 

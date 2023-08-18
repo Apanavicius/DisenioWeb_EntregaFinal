@@ -6,14 +6,19 @@ $logo_header_width: 10rem;
 $logo_footer_width: 18rem;
 
 // Header Params
-$nav_font_size: 1.2rem;
+$nav_font_size: 1.3rem;
 $hover_font_size: 1.5rem;
+$underline_thickness: 3px;
 
 // Margins.
 $margins_bottom: 2.5rem;
 $margins_top: 2.5rem;
 
 // Text params.
+$h1_size: 6rem;
+$h2_size: 5rem;
+$p_font_size: larger;
+$text_separation: 3rem;
 
-$h1_size: 4rem;
-$p_size: larger;
+// Perspective
+$perspective_distance: 10px;
