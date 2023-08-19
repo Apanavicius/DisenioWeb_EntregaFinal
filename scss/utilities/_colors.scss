@@ -4,12 +4,12 @@ $air_color: rgb(242, 250, 252);
 
 $black_color: rgb(32, 27, 27);
 
-//$smoke_color: #e4e1e1;
+$smoke_color: #b1abab;
 
 //Don´t use the following in parallax!
 $hot_breeze: linear-gradient(
-  270deg,
-  rgba(255, 255, 255, 1) 0%,
-  rgba(255, 201, 181, 1) 36%,
-  rgba(255, 252, 249, 1) 79%
+  3deg,
+  rgba(255, 252, 249, 1) 70%,
+  rgba(255, 201, 181, 1) 96%,
+  rgba(219, 80, 36, 1) 99%
 );

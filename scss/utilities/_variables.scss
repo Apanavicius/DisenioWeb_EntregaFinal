@@ -1,14 +1,18 @@
-// Isologo Sizes
-$logo_header_height: 4rem;
-$logo_header_width: 10rem;
-
-// Footer Params
-$logo_footer_width: 18rem;
+// Isologo Sizes.
+$logo_header_height: 90px;
+$border_radius: 1rem;
 
 // Header Params
-$nav_font_size: 1.3rem;
-$hover_font_size: 1.5rem;
-$underline_thickness: 3px;
+$nav_font_size: 20px;
+$list_style: none;
+$header_min_height: 80px;
+$header_max_width: 1200px;
+$header_col_gap: 40px;
+$btn_radius: 1000px;
+$btn_font_size: 17px;
+
+// Footer Params.
+$logo_footer_width: 18rem;
 
 // Margins.
 $margins_bottom: 2.5rem;
@@ -19,6 +23,7 @@ $h1_size: 6rem;
 $h2_size: 5rem;
 $p_font_size: larger;
 $text_separation: 3rem;
+$text_decoration: none;
 
-// Perspective
+// Perspective.
 $perspective_distance: 10px;

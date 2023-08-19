@@ -1,66 +1,83 @@
-@import "../utilities/colors";
-@import "../utilities/fonts";
 @import "../utilities/variables";
+@import "../utilities/colors";
 
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
-header {
-  display: flex;
-  font-family: $font_ubuntu;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(
-    3deg,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(255, 201, 183, 1) 60%,
-    rgba(255, 252, 249, 1) 70%
-  );
-  margin-bottom: $margins_bottom;
 
-  .isologo {
+ul {
+  list-style: $list_style;
+}
+
+a {
+  text-decoration: $text_decoration;
+  //color: inherit;
+}
+
+.header {
+  background: $hot_breeze;
+
+  .header_content {
+    min-height: $header_min_height;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    img {
-      height: $logo_header_height;
-      width: $logo_header_width;
-      margin-left: 4rem;
-      margin-top: 4px;
-      border-radius: 1rem;
-      z-index: 1;
-    }
+    //No se separarán mayor distancia entre el logo y los links del nav
+    //superando la cota $header_max_width. Ese es la cota máxima de separación.    //
+    max-width: $header_max_width;
+
+    margin: 0 auto; // 0: Top|Bottom; auto: Left|Right.
+    padding: 0 30px;
   }
 
-  nav ul {
+  .logo_img {
+    display: block;
+    height: $logo_header_height;
+  }
+
+  .nav_list {
     display: flex;
-    justify-content: center;
+    column-gap: $header_col_gap;
   }
 
-  li a {
-    text-decoration: none;
+  .nav_link {
     font-size: $nav_font_size;
     color: $black_color;
-    padding-right: 20px;
-    margin: 0.5rem;
-
-    &::after {
-      content: "";
-      width: 0;
-      height: $underline_thickness;
-      background-color: brown;
-      margin: auto;
-      display: block;
-      align-items: center;
-    }
-
-    &:hover::after {
-      width: 70%;
-      transition: width 0.3s linear;
-      margin-top: 5px;
-      align-items: center;
-    }
+    transition: all 0.5s; //all = para todas las propiedades.
   }
 
-  #links li {
-    display: inline;
+  .nav_link:hover,
+  .nav_link:focus {
+    color: $smoke_color;
+  }
+
+  .btn {
+    color: $fire_color;
+    background-color: $air_color;
+    padding: 7px 18px;
+    border-radius: $btn_radius;
+    text-transform: uppercase;
+    font-size: $btn_font_size;
+    transition: all 0.6s;
+
+    &:hover {
+      background-color: $smoke_color;
+    }
   }
 }
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 650px) {
+  .header_content {
+    flex-direction: column;
+    padding: 25px 0;
+    row-gap: 18px;
+  }
+
+  .nav_list {
+    column-gap: 20px;
+  }
+}
+
+/*:: FUENTE
+https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
