@@ -1,0 +1,12 @@
+1) Cambiar el color de fondo del botón contactar.
+2) Agregar en index dos botones al final para que no sea callejón sin salida: Ver catálogo/ Contactanos.
+3) Agregar más descripción, un banner al final del index.
+4) En el meta descripción del index faltan caracteres (70 a 320). Es necesario adicionar contenido.
+
+
+Hosting
+
+hostinger
+nic ar
+godaddy
+don web
