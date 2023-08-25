@@ -38,7 +38,7 @@ a {
 }
 .header .nav_link {
   font-size: 20px;
-  color: rgb(32, 27, 27);
+  color: rgb(70, 67, 67);
   transition: all 0.5s;
 }
 .header .nav_link:hover,
@@ -46,8 +46,8 @@ a {
   color: #b1abab;
 }
 .header .btn {
-  color: #cc0808;
-  background-color: rgb(242, 250, 252);
+  color: #b1abab;
+  background-color: rgb(32, 71, 247);
   padding: 7px 18px;
   border-radius: 1000px;
   text-transform: uppercase;
@@ -56,6 +56,7 @@ a {
 }
 .header .btn:hover {
   background-color: #b1abab;
+  color: rgb(70, 67, 67);
 }
 
 /* MEDIA QUERIES*/
@@ -116,14 +117,14 @@ https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
 .wrapper section.about-us {
   font-size: larger;
   padding: 2rem;
-  background-color: rgb(242, 250, 252);
-  color: rgb(32, 27, 27);
+  background-color: rgb(70, 67, 67);
+  color: rgb(242, 250, 252);
   text-align: center;
   line-height: 3rem;
 }
 
 footer {
-  background-color: rgb(32, 27, 27);
+  background-color: rgb(70, 67, 67);
   display: grid;
   justify-content: center;
   align-items: center;

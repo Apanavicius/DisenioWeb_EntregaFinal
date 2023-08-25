@@ -21,8 +21,8 @@ a {
     align-items: center;
     justify-content: space-between;
 
-    //No se separarán mayor distancia entre el logo y los links del nav
-    //superando la cota $header_max_width. Ese es la cota máxima de separación.    //
+    //No se separarán mayor distancia entre el logo y los links del nav...
+    //...superando la cota $header_max_width. Ese es la cota máxima de separación.    //
     max-width: $header_max_width;
 
     margin: 0 auto; // 0: Top|Bottom; auto: Left|Right.
@@ -51,8 +51,8 @@ a {
   }
 
   .btn {
-    color: $fire_color;
-    background-color: $air_color;
+    color: $smoke_color;
+    background-color: $sky_color;
     padding: 7px 18px;
     border-radius: $btn_radius;
     text-transform: uppercase;
@@ -61,6 +61,7 @@ a {
 
     &:hover {
       background-color: $smoke_color;
+      color: $black_color;
     }
   }
 }

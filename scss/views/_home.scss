@@ -40,6 +40,7 @@
     object-fit: stretch;
     z-index: -1;
   }
+
   .title {
     font-size: $h1_size;
     color: transparent;
@@ -50,8 +51,8 @@
   section.about-us {
     font-size: $p_font_size;
     padding: 2rem;
-    background-color: $air_color;
-    color: $black_color;
+    background-color: $black_color;
+    color: $air_color;
     text-align: center;
     line-height: $text_separation;
   }
