@@ -7,10 +7,6 @@
   font-size: $btn_font_size;
   transition: all 0.6s;
 
-  // &::before {
-  //   content: "Contacto";
-  // }
-
   &:hover {
     background-color: $smoke_color;
     color: $black_color;

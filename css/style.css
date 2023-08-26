@@ -60,7 +60,7 @@ a {
   color: #b1abab;
 }
 .header .btn::before {
-  content: "Contactos";
+  content: "Contacto";
 }
 
 /* MEDIA QUERIES*/
