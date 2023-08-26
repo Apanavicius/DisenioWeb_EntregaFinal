@@ -8,6 +8,20 @@
   box-sizing: border-box;
 }
 
+.btn {
+  color: #b1abab;
+  background-color: rgb(32, 71, 247);
+  padding: 7px 18px;
+  border-radius: 1000px;
+  text-transform: uppercase;
+  font-size: 17px;
+  transition: all 0.6s;
+}
+.btn:hover {
+  background-color: #b1abab;
+  color: rgb(70, 67, 67);
+}
+
 ul {
   list-style: none;
 }
@@ -45,18 +59,8 @@ a {
 .header .nav_link:focus {
   color: #b1abab;
 }
-.header .btn {
-  color: #b1abab;
-  background-color: rgb(32, 71, 247);
-  padding: 7px 18px;
-  border-radius: 1000px;
-  text-transform: uppercase;
-  font-size: 17px;
-  transition: all 0.6s;
-}
-.header .btn:hover {
-  background-color: #b1abab;
-  color: rgb(70, 67, 67);
+.header .btn::before {
+  content: "Contactos";
 }
 
 /* MEDIA QUERIES*/
