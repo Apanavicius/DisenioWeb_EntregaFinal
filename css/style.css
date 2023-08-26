@@ -99,18 +99,20 @@ https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
   z-index: -1;
 }
 .wrapper .background {
+  background: url("../../assets/img/home_backGround.jpg");
   transform: translateZ(-10px) scale(2);
 }
 .wrapper .foreground {
+  background: url("../../assets/img/fireflame.png");
   transform: translateZ(-3px) scale(1.5);
   opacity: 0.2;
 }
 .wrapper .background,
 .wrapper .foreground {
+  background-size: cover;
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: stretch;
   z-index: -1;
 }
 .wrapper .title {

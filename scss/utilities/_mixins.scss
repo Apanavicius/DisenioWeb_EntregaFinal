@@ -1,4 +1,5 @@
 // Este mixin permite cambiar el label interior de un botón.
+
 @mixin add-content($contentToAdd) {
   content: $contentToAdd;
 }

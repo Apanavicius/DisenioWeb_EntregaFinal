@@ -23,10 +23,12 @@
   }
 
   .background {
+    background: $home_backGround;
     transform: translateZ(-10px) scale(2);
   }
 
   .foreground {
+    background: $home_foreGround;
     transform: translateZ(-3px) scale(1.5);
     opacity: 0.2;
     //margin-top: 100px;
@@ -34,10 +36,11 @@
 
   .background,
   .foreground {
+    background-size: $home_img_size;
     position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: stretch;
+    //object-fit: stretch;
     z-index: -1;
   }
 
