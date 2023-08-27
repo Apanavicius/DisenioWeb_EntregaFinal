@@ -54,9 +54,14 @@
   section.about-us {
     font-size: $p_font_size;
     padding: 2rem;
-    background-color: $black_color;
+    background-color: $grey_color;
     color: $air_color;
     text-align: center;
     line-height: $text_separation;
+  }
+
+  section.lead {
+    background-color: $air_color;
+    height: $section_height;
   }
 }
