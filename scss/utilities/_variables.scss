@@ -30,10 +30,11 @@ $margins_top: 2.5rem;
 // Text params.
 $h1_size: 6rem;
 $h2_size: 5rem;
-$section_title_size: 2rem;
+$section_title_size: 1.5rem;
 $p_font_size: larger;
 $text_separation: 3rem;
 $text_decoration: none;
+$font_style: italic;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -42,7 +43,7 @@ $perspective_distance: 10px;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// Images.
+// INDEX Images.
 $home_backGround: url("../assets/img/etc/welcome.jpg");
 $home_foreGround: url("../assets/img/etc/fireflame.png");
 $home_img_size: cover;
@@ -52,4 +53,4 @@ $home_img_size: cover;
 // Heights.
 
 $section_height: 15rem;
-$products_container_height: 30rem;
+$products_container_height: auto; //100vh;
