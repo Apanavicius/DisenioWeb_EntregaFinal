@@ -121,6 +121,7 @@ https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
   text-shadow: 0 0 1.5px rgb(242, 250, 252);
 }
 .wrapper section.about-us {
+  height: 28rem;
   font-size: larger;
   padding: 2rem;
   background-color: rgb(70, 67, 67);
@@ -128,9 +129,11 @@ https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
   text-align: center;
   line-height: 3rem;
 }
-.wrapper section.lead {
+.wrapper section.addon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgb(242, 250, 252);
-  height: 15rem;
 }
 
 .btn {
@@ -203,7 +206,7 @@ a {
 https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
 footer {
   background-color: #0e0c0c;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(242, 250, 252);

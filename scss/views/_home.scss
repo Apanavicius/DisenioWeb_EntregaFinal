@@ -63,6 +63,7 @@
 
   section.addon {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: $air_color;
     //height: $section_height;

@@ -6,8 +6,7 @@
 
 footer {
   background-color: $black_color;
-  display: grid;
-  //margin-top: $margins_top;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: $air_color;
@@ -16,7 +15,6 @@ footer {
 
   img {
     width: $logo_footer_width;
-
     margin-top: $margins_top;
     display: block;
     border-radius: 1rem;
