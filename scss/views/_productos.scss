@@ -1,0 +1,99 @@
+@import "../utilities/colors";
+@import "../utilities/variables";
+@import "../utilities/fonts";
+//@import "../utilities/_card.scss"
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+.container {
+  height: auto; //$products_container_height;
+  display: flex;
+  flex-wrap: wrap;
+
+  .sidebar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $black_color;
+
+    .title {
+      color: $smoke_color;
+      font-size: $section_title_size;
+      text-transform: uppercase;
+    }
+
+    .text-content {
+      color: $smoke_color;
+      font-style: $font_style;
+      line-height: $text_separation;
+    }
+  }
+  .item-grid-container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(2, 20rem);
+    // GAP para espaciado dentro del GRID
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  //.grid-item {
+  //  row-gap: 80px;
+  //  column-gap: 3rem;
+  // }
+
+  .products-display {
+    flex: 3;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.banner {
+  display: flex;
+  height: auto;
+  align-self: center;
+  justify-content: center;
+  margin-top: $margins_top;
+  margin-bottom: $margins_bottom;
+}
+
+.card-item {
+  display: grid;
+  grid-template-areas: "stack";
+  margin: $general_margin;
+}
+
+.card-item > * {
+  grid-area: stack;
+  border-radius: $card-border_radius;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.card-item > figcaption {
+  color: black;
+  display: grid;
+  align-items: end;
+  padding: 1.5rem 2rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(212, 228, 240),
+    rgba(42, 90, 49, 0),
+    rgba(96, 105, 110, 0.75)
+  ); // rgb(54, 57, 59) <- otra opción, 1era fila.
+}
+
+.card-item figcaption {
+  opacity: 0.2;
+  transition: opacity 500ms;
+}
+
+.card-item:hover figcaption {
+  opacity: 1;
+}

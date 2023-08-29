@@ -32,8 +32,12 @@ footer {
   }
 
   .general-container .copywr {
-    margin-top: $margins_top;
+    margin-bottom: $margins_bottom;
     display: flex;
     justify-content: center;
+
+    a {
+      color: $smoke_color;
+    }
   }
 }

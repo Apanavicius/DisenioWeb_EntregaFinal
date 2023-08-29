@@ -4,53 +4,241 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESENCIA | Productos</title>
-    <!-- STYLE-->
+
+    <!-- CAROUSEL BOOSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- STYLE SHEET-->
     <link rel="stylesheet" href="../css/style.css" />
+
     <!-- Favicon-->
     <link
       rel="shortcut icon"
       href="../assets/img/etc/favicon-16x16.png"
       type="image/x-icon"
     />
+
+    <!-- META TAGS -->
+    <!-- DESCRIPTION -->
+    <meta
+      name="description"
+      content="Fabricamos artenasalmente vajilla de vidrio."
+    />
+
+    <!-- KEYWORDS -->
+    <meta
+      name="keywords"
+      content="fabricacion, artenasal, vidrio, vajilla, productos, hogar, casa, cocina, familia, tienda online"
+    />
+
+    <!-- TELEPHONE -->
+    <meta name="telephone" content="+541234567890" />
+
+    <!-- WHATSAPP -->
+    <meta name="whatsapp" content="+541234567890" />
+
+    <!-- GEO -->
+    <meta name="geo.placename" content="Buenos Aires" />
+
+    <!-- AUTHOR -->
+    <meta name="author" content="Vi©!" />
   </head>
+
   <body>
-    <div class="general-container">
-      <header>
-        <div class="isologo">
-          <a href="../index.html"
-            ><img
-              src="../assets/img/isologos/esenciaWhite.png"
-              alt="Logo
-            Escencia"
-          /></a>
-        </div>
-        <nav>
-          <ul id="links">
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="../pages/proceso.html">Proceso</a></li>
-            <li><a href="../pages/contactanos.html">Contáctanos</a></li>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header_content">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/img/isologos/esenciaWhite.png"
+            alt="Logo Esencia"
+            class="logo_img"
+          />
+        </a>
+        <nav class="nav">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="../pages/nosotros.html" class="nav_link">Nosotros</a>
+            </li>
+            <li class="nav_item">
+              <a href="../pages/productos.html" class="nav_link">Productos</a>
+            </li>
+            <li class="nav_item">
+              <a href="proceso.html" class="nav_link">Proceso</a>
+            </li>
+            <li class="nav_item">
+              <a href="../pages/contactanos.html" class="btn"></a>
+            </li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <div class="container">
+      <!-- ASIDE -->
+      <aside class="sidebar">
+        <h1 class="title">descubre nuestra esencia</h1>
+        <p class="text-content">
+          Aquí podras ver esos productos que te acompañarán en esos
+          <strong> buenos momentos.</strong>
+        </p>
+      </aside>
+      <!-- END ASIDE -->
+
+      <!-- Sección de productos -->
+      <div class="products-display">
+        <section class="item-grid-container">
+          <figure class="card-item firstItem">
+            <img src="../assets/img/productos/copas.jpg" alt="Copas Sturley" />
+            <figcaption>Copas Sturley</figcaption>
+          </figure>
+          <figure class="card-item">
+            <img
+              src="../assets/img/productos/florero.jpg"
+              alt="Florero Hoffenwugüem"
+            />
+            <figcaption>Florero Hoffenwugüem</figcaption>
+          </figure>
+          <figure class="card-item">
+            <img src="../assets/img/productos/jarra.jpg" alt="Jarra Dutch" />
+            <figcaption>Jarra Dutch</figcaption>
+          </figure>
+          <figure class="card-item">
+            <img src="../assets/img/productos/vaso.jpg" alt="Vaso Coventry" />
+            <figcaption>Vaso Coventry</figcaption>
+          </figure>
+        </section>
+
+        <!-- CAROUSEL -->
+        <section class="banner">
+          <!-- </section> -->
+          <div id="carouselExampleIndicators" class="carousel slide w-75">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../assets/img/proceso/proceso01.jpg"
+                  class="d-block w-100 mw-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/img/proceso/proceso02.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/img/proceso/proceso03.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../assets/img/proceso/proceso04.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <!-- END CAROUSEL -->
+      </div>
+      <!-- END Sección de productos -->
     </div>
-    <div>PRODUCTOS</div>
+
+    <!-- FOOTER -->
     <footer class="border">
       <div class="general-container">
-        <img src="../assets/img/isologos/esenciaBlack.png" alt="El logo" />
-        <p class="copywr">Todos los derechos reservados ©.</p>
+        <img
+          src="../assets/img/isologos/logo-footer.png"
+          alt="Isologo Esencia"
+        />
         <div class="rrss-container">
-          <a href="https://www.facebook.com"
+          <a href="https://www.facebook.com" target="_blank"
             ><img src="../assets/img/rrss/face.png" alt="FaceBook Logo"
           /></a>
-          <a href="https://www.instagram.com"
+          <a href="https://www.instagram.com" target="_blank"
             ><img src="../assets/img/rrss/insta.png" alt="Instagram Logo"
           /></a>
-          <a href="https://www.twitter.com"
+          <a href="https://www.twitter.com" target="_blank"
             ><img src="../assets/img/rrss/x.png" alt="Twitter Logo"
           /></a>
         </div>
+        <p class="copywr">
+          <a href="https://www.linkedin.com/in/victorapanavicius"
+            >Todos los derechos reservados Vi©!</a
+          >
+        </p>
       </div>
     </footer>
+    <!-- END FOOTER -->
   </body>
 </html>

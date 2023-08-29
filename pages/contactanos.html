@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESENCIA | Charlemos</title>
-    <!-- STYLE-->
+    <!-- STYLE SHEET-->
     <link rel="stylesheet" href="../css/style.css" />
     <!-- Favicon-->
     <link
@@ -15,41 +15,62 @@
   </head>
   <body>
     <div class="general-container">
-      <header>
-        <div class="isologo">
-          <a href="../index.html"
-            ><img
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header_content">
+          <a href="../index.html" class="logo">
+            <img
               src="../assets/img/isologos/esenciaWhite.png"
-              alt="Logo Escencia"
-          /></a>
+              alt="Logo Esencia"
+              class="logo_img"
+            />
+          </a>
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="../pages/nosotros.html" class="nav_link">Nosotros</a>
+              </li>
+              <li class="nav_item">
+                <a href="../pages/productos.html" class="nav_link">Productos</a>
+              </li>
+              <li class="nav_item">
+                <a href="../pages/proceso.html" class="nav_link">Proceso</a>
+              </li>
+              <li class="nav_item">
+                <a href="../pages/contactanos.html" class="btn"></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul id="links">
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="../pages/proceso.html">Proceso</a></li>
-            <li><a href="../pages/contactanos.html">Contáctanos</a></li>
-          </ul>
-        </nav>
       </header>
+      <!-- END HEADER -->
+      <div >CHARLEMOS UN RATO!</div>
     </div>
-    <div>CHARLEMOS UN RATO!</div>
-    <footer class="border">
+    
+     <!-- FOOTER -->
+     <footer class="border">
       <div class="general-container">
-        <img src="../assets/img/isologos/esenciaBlack.png" alt="El logo" />
-        <p class="copywr">Todos los derechos reservados ©.</p>
+        <img
+          src="../assets/img/isologos/logo-footer.png"
+          alt="Isologo Esencia"
+        />
         <div class="rrss-container">
-          <a href="https://www.facebook.com"
+          <a href="https://www.facebook.com" target="_blank"
             ><img src="../assets/img/rrss/face.png" alt="FaceBook Logo"
           /></a>
-          <a href="https://www.instagram.com"
+          <a href="https://www.instagram.com" target="_blank"
             ><img src="../assets/img/rrss/insta.png" alt="Instagram Logo"
           /></a>
-          <a href="https://www.twitter.com"
+          <a href="https://www.twitter.com" target="_blank"
             ><img src="../assets/img/rrss/x.png" alt="Twitter Logo"
           /></a>
         </div>
+        <p class="copywr">
+          <a href="https://www.linkedin.com/in/victorapanavicius"
+            >Todos los derechos reservados Vi©!</a
+          >
+        </p>
       </div>
     </footer>
-  </body>
+    <!--END FOOTER -->
 </html>
