@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -133,74 +135,24 @@ https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
   height: 15rem;
 }
 
-.btn {
-  color: #b1abab;
-  background-color: rgb(32, 71, 247);
-  padding: 7px 18px;
-  border-radius: 1000px;
-  text-transform: uppercase;
-  font-size: 17px;
-  transition: all 0.6s;
+.container {
+  height: 30rem;
+  display: flex;
+  flex-wrap: wrap;
 }
-.btn:hover {
+.container .sidebar {
+  background-color: #0e0c0c;
+  flex: 1;
+}
+.container .sidebar .title {
+  color: #b1abab;
+  font-size: 2rem;
+}
+.container .item-grid-container {
   background-color: #b1abab;
-  color: #0e0c0c;
+  flex: 3;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header {
-  background: linear-gradient(3deg, rgb(255, 252, 249) 70%, rgb(255, 201, 181) 96%, rgb(219, 80, 36) 99%);
-}
-.header .header_content {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-.header .logo_img {
-  display: block;
-  height: 90px;
-}
-.header .nav_list {
-  display: flex;
-  column-gap: 40px;
-}
-.header .nav_link {
-  font-size: 20px;
-  color: #0e0c0c;
-  transition: all 0.5s;
-}
-.header .nav_link:hover,
-.header .nav_link:focus {
-  color: #b1abab;
-}
-.header .btn::before {
-  content: "Contacto";
-}
-
-/* MEDIA QUERIES*/
-@media (max-width: 650px) {
-  .header_content {
-    flex-direction: column;
-    padding: 25px 0;
-    row-gap: 18px;
-  }
-  .nav_list {
-    column-gap: 20px;
-  }
-}
-/*:: FUENTE
-https://www.youtube.com/watch?v=vvTPhOw4wO4&list=WL&index=230&t=668s*/
 footer {
   background-color: #0e0c0c;
   display: grid;

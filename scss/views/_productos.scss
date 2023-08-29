@@ -1,0 +1,25 @@
+@import "../utilities/colors";
+@import "../utilities/variables";
+@import "../utilities/fonts";
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+.container {
+  height: $products_container_height;
+  display: flex;
+  flex-wrap: wrap;
+
+  .sidebar {
+    background-color: $black_color;
+    flex: 1;
+
+    .title {
+      color: $smoke_color;
+      font-size: $section_title_size;
+    }
+  }
+
+  .item-grid-container {
+    background-color: $smoke_color;
+    flex: 3;
+  }
+}
