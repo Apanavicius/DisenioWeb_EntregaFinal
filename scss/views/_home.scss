@@ -52,6 +52,7 @@
   }
 
   section.about-us {
+    height: $section_height;
     font-size: $p_font_size;
     padding: 2rem;
     background-color: $grey_color;
@@ -60,8 +61,10 @@
     line-height: $text_separation;
   }
 
-  section.lead {
+  section.addon {
+    display: flex;
+    justify-content: center;
     background-color: $air_color;
-    height: $section_height;
+    //height: $section_height;
   }
 }
