@@ -1,0 +1,47 @@
+section.us-welcome {
+  position: relative; /* Agregamos posición relativa para que los elementos posicionados dentro sean relativos a este contenedor */
+  background: url("../../assets/img/etc/makingBottle01.avif");
+  background-blend-mode: darken, luminosity;
+  background-size: cover;
+  overflow: hidden; /* Ocultamos cualquier contenido que se salga del section */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .us-title {
+    font-size: $h1_size;
+    color: $air_color;
+  }
+}
+
+main .us-main {
+  background-color: $grey_color;
+  display: flex;
+  position: relative;
+  //flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  height: $aox_box_height;
+  width: $aox_box_width;
+  background-color: $black_color;
+  color: $air_color;
+  border: 5px solid $fire_color;
+  justify-content: center;
+  align-items: center;
+  margin: $margins_top 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  &.msg-right {
+    left: 20rem;
+  }
+
+  &.msg-left {
+    left: 50rem;
+  }
+}

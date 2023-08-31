@@ -49,6 +49,8 @@ $home_backGround: url("../assets/img/etc/welcome.jpg");
 $home_foreGround: url("../assets/img/etc/fireflame.png");
 $home_img_size: cover;
 
+$us_backGround: url("../../assets/img/etc/makingBottle01.avif");
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // Heights.
@@ -59,3 +61,17 @@ $section_height: 28rem;
 // Border-Radius.
 $card-border_radius: 4rem;
 $btn_radius: 1000px;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Labels.
+
+$btn_contact_label: "Contacto";
+$btn_sendForm_label: "Enviar";
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// AOS BOX
+
+$aox_box_width: 25rem;
+$aox_box_height: 15rem;

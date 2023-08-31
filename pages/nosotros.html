@@ -4,17 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ESENCIA | Nosotros</title>
+
+    <!-- AOS STYLE SHEET-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- STYLE SHEET-->
     <link rel="stylesheet" href="../css/style.css" />
+
     <!-- Favicon-->
     <link
       rel="shortcut icon"
       href="../assets/img/etc/favicon-16x16.png"
       type="image/x-icon"
     />
+    <!-- META TAGS -->
+
+    <!-- DESCRIPTION -->
+    <meta
+      name="description"
+      content="Fabricamos artenasalmente vajilla de vidrio."
+    />
+
+    <!-- KEYWORDS -->
+    <meta
+      name="keywords"
+      content="fabricacion, artenasal, vidrio, vajilla, productos, hogar, casa, cocina, familia, tienda online"
+    />
+
+    <!-- TELEPHONE -->
+    <meta name="telephone" content="+541234567890" />
+
+    <!-- WHATSAPP -->
+    <meta name="whatsapp" content="+541234567890" />
+
+    <!-- GEO -->
+    <meta name="geo.placename" content="Buenos Aires" />
+
+    <!-- AUTHOR -->
+    <meta name="author" content="Vi©!" />
   </head>
+
   <body>
-    <div class="general-container">
+    <div>
       <!-- HEADER -->
       <header class="header">
         <div class="header_content">
@@ -44,8 +74,30 @@
         </div>
       </header>
       <!-- END HEADER -->
-      <div>NOSOTROS</div>
+
+      <!--  SECTION | PRESENTATION -->
+      <section class="us-welcome">
+        <img class="us-background" />
+        <h1 class="us-title">¿Por qué lo hacemos?</h1>
+      </section>
+      <!-- END SECTION | PRESENTATION -->
+
+      <!-- MAIN -->
+
+      <main class="us-main">
+        <div class="box msg-right" data-aos="fade-right">somos entusiastas</div>
+        <div class="box msg-left" data-aos="fade-left">
+          apasionados por hacer
+        </div>
+        <div class="box msg-right" data-aos="fade-right">somos artesanos</div>
+        <div class="box msg-left" data-aos="fade-left">únicos</div>
+        <div class="box msg-right" data-aos="fade-right">
+          dedicados al detalle
+        </div>
+        <div class="box msg-left" data-aos="fade-left">tradicionales</div>
+      </main>
     </div>
+    <!-- END div GENERAL -->
 
     <!-- FOOTER -->
     <footer class="border">
@@ -73,5 +125,9 @@
       </div>
     </footer>
     <!--END FOOTER -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

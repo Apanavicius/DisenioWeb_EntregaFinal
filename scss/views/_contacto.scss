@@ -1,0 +1,62 @@
+@import "../utilities/colors";
+@import "../utilities/variables";
+@import "../utilities/fonts";
+@import "../utilities/mixins";
+
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+.btn::before {
+  @include add-content($btn_sendForm_label);
+}
+
+main.contact-container {
+  background-color: black; //$smoke_color;
+  //height: auto;
+  //width: 100vw;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+
+  .box-1 {
+    flex: 1 200px;
+    margin: $general_margin;
+    justify-content: center;
+  }
+
+  .box-2 {
+    flex: 1 200px;
+    margin: $general_margin;
+    justify-content: center;
+  }
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-fluid {
+  justify-content: center;
+  margin-top: 1rem;
+  width: 46rem;
+  margin: 0 auto;
+}
+
+.btn-container {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  height: 25rem;
+  //width: rem;
+}
+
+.quotation p {
+  text-align: center;
+}
