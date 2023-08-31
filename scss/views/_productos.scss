@@ -1,14 +1,11 @@
-@import "../utilities/colors";
-@import "../utilities/variables";
-@import "../utilities/fonts";
-
+@import "../layout/_aside.scss";
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 .container {
   height: auto; //$products_container_height;
   display: flex;
   flex-wrap: wrap;
 
-  .sidebar {
+  /*.sidebar {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -27,7 +24,7 @@
       font-style: $font_style;
       line-height: $text_separation;
     }
-  }
+  }*/
   .item-grid-container {
     display: grid;
     flex-wrap: wrap;

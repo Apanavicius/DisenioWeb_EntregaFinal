@@ -12,7 +12,8 @@ section.us-welcome {
 
   .us-title {
     font-size: $h1_size;
-    color: $air_color;
+    color: $smoke_color;
+    -webkit-text-stroke: 0.3px $air_color;
   }
 }
 

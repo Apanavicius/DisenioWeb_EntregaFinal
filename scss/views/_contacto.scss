@@ -39,7 +39,7 @@ main.contact-container {
 }
 
 .container-fluid {
-  justify-content: center;
+  //justify-: center;
   margin-top: 1rem;
   width: 46rem;
   margin: 0 auto;
@@ -57,6 +57,20 @@ main.contact-container {
   //width: rem;
 }
 
-.quotation p {
-  text-align: center;
+.final-messg {
+  font-style: $font_style;
+  margin: $margins_top 1rem;
+  line-height: $text_separation;
+  font-size: $p_font_size;
+  color: $fire_color;
+
+  .quotation {
+    text-align: center;
+  }
+
+  & .author {
+    text-align: right;
+    margin-right: 3rem;
+    font-weight: bolder;
+  }
 }

@@ -1,0 +1,22 @@
+.sidebar {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $black_color;
+
+  .title {
+    color: $smoke_color;
+    font-size: $section_title_size;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+
+  .text-content {
+    color: $smoke_color;
+    font-style: $font_style;
+    line-height: $text_separation;
+    text-align: center;
+  }
+}
